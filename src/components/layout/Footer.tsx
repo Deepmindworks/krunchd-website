@@ -49,8 +49,17 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-[#999999]">
-              Clean. Crunchy. Complete. Premium snacks made with real
-              ingredients, crafted for people who refuse to compromise.
+              23, Second Street, Visalatchi Nagar, Santhosapuram,
+              Rajakilpakkam, Chennai &ndash; 600073
+            </p>
+            <p className="mt-2 text-sm text-[#999999]">
+              Phone:{" "}
+              <a
+                href="tel:+919176464641"
+                className="transition-colors hover:text-white"
+              >
+                +91 91764 64641
+              </a>
             </p>
             <div className="mt-6 flex gap-4">
               {socialLinks.map((social) => (
@@ -133,20 +142,20 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-[#1A1A1A] pt-8 md:flex-row">
-          <p className="text-xs text-[#666666]">
-            &copy; {new Date().getFullYear()} KRUNCHD. All rights reserved.
-          </p>
-          <div className="flex gap-6">
-            {footerLinks.legal.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="text-xs text-[#666666] transition-colors hover:text-[#999999]"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+            <p className="text-xs text-[#666666]">
+              &copy; {new Date().getFullYear()} KRUNCHD. All rights reserved.
+            </p>
+            <div className="flex gap-6">
+              {footerLinks.legal.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="text-xs text-[#666666] transition-colors hover:text-[#999999]"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
         </div>
       </div>
     </footer>
